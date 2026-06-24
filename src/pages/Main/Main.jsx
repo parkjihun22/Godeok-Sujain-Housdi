@@ -228,6 +228,7 @@ const Main = () => {
               onClosed={() => setIsOpenPopup1(false)}
               popupImage={popupPage1}
               numbering={1}
+              openInterestPopup={() => setIsInterestPopupOpen(true)}
             />
           )}
           {!isOpenPopup1 && isOpenPopup2 && (
@@ -567,6 +568,7 @@ const Main = () => {
               onClosed={() => setIsOpenPopup1(!isOpenPopup1)}
               popupImage={mobilePopupPage1}
               numbering={1}
+              openInterestPopup={() => setIsInterestPopupOpen(true)}
             />
           )}
           {isOpenPopup2 && (
